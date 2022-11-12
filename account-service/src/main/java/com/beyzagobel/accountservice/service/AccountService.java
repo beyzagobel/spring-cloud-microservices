@@ -15,8 +15,8 @@ public class AccountService {
 
     private final AccountRepository accountRepository;
 
-    public ResponseEntity<Account> get(String id){
-        return ResponseEntity.ok(accountRepository.findById(id).orElseThrow(() -> new IllegalArgumentException()));
+    public Account get(String id){
+        return accountRepository.findById(id).orElseThrow(() -> new IllegalArgumentException());
     }
 
     public ResponseEntity<Account> save(Account account){
@@ -24,8 +24,13 @@ public class AccountService {
     }
 
     public ResponseEntity<Account> update(String id, Account account){
-        Assert.isNull(id, "Id cannot be null");
-        return ResponseEntity.ok(accountRepository.save(account));
+        Account updateAccount = new Account();
+        updateAccount.setUsername(account.getUsername());
+        updateAccount.setPassword(account.getPassword());
+        updateAccount.setCreatedAt(account.getCreatedAt());
+        updateAccount.setActive(account.getActive());
+        updateAccount.setEmail(account.getEmail());
+        return ResponseEntity.ok(accountRepository.save(updateAccount));
     }
 
     public void delete(Account account){
