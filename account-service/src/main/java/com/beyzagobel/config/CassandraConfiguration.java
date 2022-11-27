@@ -1,5 +1,6 @@
 package com.beyzagobel.config;
 
+import lombok.EqualsAndHashCode;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +13,7 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 @EnableCassandraRepositories
 public class CassandraConfiguration extends AbstractCassandraConfiguration {
 
-    @Value("${spring.data.cassandra.keyspace-name}")
+    @Value("${spring.data.cassandra.keyspace.name}")
     private String keyspaceName;
 
     @Value("${spring.cassandra.port}")
@@ -51,4 +52,6 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
     public String[] getEntityBasePackages() {
         return new String[] {"com.beyzagobel.accountservice"};
     }
+
+
 }
