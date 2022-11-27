@@ -2,7 +2,7 @@ CREATE KEYSPACE IF NOT EXISTS account_service WITH REPLICATION = { 'class' : 'Si
 
 
 CREATE TABLE accounts(
-    id BIGINT PRIMARY KEY ,
+    id text PRIMARY KEY ,
     account_username text,
     account_email text,
     account_password text,

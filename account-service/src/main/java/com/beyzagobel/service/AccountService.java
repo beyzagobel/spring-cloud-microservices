@@ -21,7 +21,7 @@ public class AccountService {
 
     private final ModelMapper modelMapper;
 
-    public ResponseEntity<Account> getAccount(String id){
+    public ResponseEntity<Account> getAccount (String id){
         return ResponseEntity.ok(accountRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Account not exist with id : " + id)));
     }
 
