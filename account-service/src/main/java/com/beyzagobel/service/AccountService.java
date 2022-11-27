@@ -6,6 +6,7 @@ import com.beyzagobel.exception.ResourceNotFoundException;
 import com.beyzagobel.repository.AccountRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -27,7 +28,7 @@ public class AccountService {
 
     public ResponseEntity<Account> createAccount(AccountDTO accountDTO){
         Account account = this.modelMapper.map(accountDTO, Account.class);
-        return ResponseEntity.ok(accountRepository.save(account));
+        return new ResponseEntity<>(accountRepository.save(account), HttpStatus.CREATED);
     }
 
 
