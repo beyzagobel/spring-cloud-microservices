@@ -1,4 +1,4 @@
-package com.beyzagobel.accountservice.entity;
+package com.beyzagobel.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

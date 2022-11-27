@@ -1,6 +1,6 @@
-package com.beyzagobel.accountservice.repository;
+package com.beyzagobel.repository;
 
-import com.beyzagobel.accountservice.entity.Account;
+import com.beyzagobel.entity.Account;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.stereotype.Repository;
 

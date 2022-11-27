@@ -1,4 +1,4 @@
-package com.beyzagobel.accountservice.dto;
+package com.beyzagobel.dto;
 
 import lombok.Data;
 import java.io.Serializable;
