@@ -43,6 +43,6 @@ We will build CRUD RESTFul APIs for a Simple Account Management System using Spr
 Following are five REST APIs (Controller handler methods) are created for Account resource.
 
 
-![image](https://user-images.githubusercontent.com/78444522/204156169-9dadc8a4-9961-4c30-96f3-048c145abdba.png)
+![image](https://user-images.githubusercontent.com/78444522/204156541-618fdcbb-cc57-48dc-ad8c-5434c2d024ed.png)
 
 
