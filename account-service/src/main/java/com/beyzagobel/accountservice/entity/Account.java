@@ -32,7 +32,7 @@ public class Account implements Serializable {
     private Date createdAt;
 
     @Column(value = "is_active")
-    private Boolean active;
+    private Boolean isActive;
 
 
 }

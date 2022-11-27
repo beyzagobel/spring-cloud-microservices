@@ -1,5 +1,6 @@
 package com.beyzagobel.accountservice.api;
 
+import com.beyzagobel.accountservice.dto.AccountDTO;
 import com.beyzagobel.accountservice.entity.Account;
 import com.beyzagobel.accountservice.service.AccountService;
 import lombok.RequiredArgsConstructor;
@@ -21,18 +22,18 @@ public class AccountApi {
     }
 
     @PostMapping
-    public ResponseEntity<Account> save(@RequestBody Account account){
-        return accountService.save(account);
+    public ResponseEntity<Account> save(@RequestBody AccountDTO accountDTO){
+        return accountService.save(accountDTO);
     }
 
     @GetMapping("/{id}/update")
-    public ResponseEntity<Account> update(@PathVariable("id") String id ,@RequestBody Account account){
-        return accountService.update(id,account);
+    public ResponseEntity<Account> update(@PathVariable("id") String id ,@RequestBody AccountDTO accountDTO){
+        return accountService.update(id,accountDTO);
     }
 
     @DeleteMapping
-    public void delete(@RequestBody Account account){
-        accountService.delete(account);
+    public void delete(@RequestBody AccountDTO accountDTO){
+        accountService.delete(accountDTO);
     }
 
     @GetMapping
