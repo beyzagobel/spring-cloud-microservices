@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="248d7a35-7584-4315-be29-fff4c3848b6f">
+    <data-source source="LOCAL" name="@localhost " uuid="e2dc7e83-c010-46e0-97cc-80326f5b2c19">
       <driver-ref>cassandra</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.dbschema.CassandraJdbcDriver</jdbc-driver>
