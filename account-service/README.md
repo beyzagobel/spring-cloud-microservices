@@ -36,3 +36,13 @@ CREATE KEYSPACE IF NOT EXISTS account_service WITH REPLICATION = { 'class' : 'Si
 
 
 
+## What we’ll build ?
+
+We will build CRUD RESTFul APIs for a Simple Account Management System using Spring Boot and the Cassandra database. 
+
+Following are five REST APIs (Controller handler methods) are created for Account resource.
+
+
+![image](https://user-images.githubusercontent.com/78444522/204156169-9dadc8a4-9961-4c30-96f3-048c145abdba.png)
+
+
